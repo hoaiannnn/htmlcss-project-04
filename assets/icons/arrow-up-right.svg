@@ -1,0 +1,8 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 10" width="12" height="10">
+	<title>arrow-up-right</title>
+	<style>
+		.s0 { fill: none;stroke: #ff5b2e;stroke-linecap: round;stroke-linejoin: round } 
+	</style>
+	<path fill-rule="evenodd" class="s0" d="m3 9l6-6"/>
+	<path fill-rule="evenodd" class="s0" d="m4.1 3h4.9v4.9"/>
+</svg>
