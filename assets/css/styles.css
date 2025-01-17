@@ -18,6 +18,29 @@ body {
 }
 
 /* Common */
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
+.line-clamp.line-3 {
+    --line-clamp: 3;
+}
+
+.line-clamp.line-4 {
+    --line-clamp: 4;
+}
+
+.line-clamp.line-5 {
+    --line-clamp: 5;
+}
+
 h1,
 h2,
 h3,
@@ -1102,4 +1125,212 @@ a {
     width: 24px;
     background-color: #ff5b2e;
     border-radius: 4px;
+}
+
+/* Blog */
+.blog {
+    padding: 78px;
+}
+
+.blog__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog__info {
+    margin-right: 74px;
+    width: 350px;
+}
+
+.blog__cta {
+    margin-top: 24px;
+    min-width: 182px;
+    color: #ff5b2e;
+    border-color: rgba(255, 91, 46, 0.6);
+}
+
+.blog__list {
+    margin-top: 54px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 48px;
+}
+
+.blog-item__img-wrap {
+    padding: 24px 0 0 36px;
+    border-radius: 24px;
+    background: #90ccff;
+}
+
+.blog-item:nth-child(2) .blog-item__img-wrap {
+    background: #ff997e;
+}
+
+.blog-item:nth-child(3) .blog-item__img-wrap {
+    background: #5bd6e2;
+}
+
+.blog-item__time {
+    color: #fff;
+    font-family: "Sora", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.22;
+}
+
+.blog-item__img {
+    display: block;
+    margin-top: 25px;
+    width: 100%;
+    height: 296px;
+    object-fit: cover;
+}
+
+.blog-item__info {
+    padding-top: 28px;
+    padding-right: 14px;
+}
+
+.blog-item__title {
+    color: #000958;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.54;
+}
+
+.blog-item__desc {
+    margin-top: 16px;
+    color: #656689;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.72;
+}
+
+/* Footer */
+.footer {
+    margin-top: 52px;
+    background: linear-gradient(to right, #fff6ed 43%, transparent 42%);
+}
+
+.footer__inner {
+    display: flex;
+}
+
+.footer__left {
+    width: 42%;
+    padding: 114px 0 148px;
+}
+
+.footer__right {
+    flex: 1;
+    padding: 52px 0 48px 0;
+}
+
+.subscribe-form {
+    margin-top: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 268px;
+    height: 46px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 91, 46, 0.25);
+    background: #fff;
+    margin-bottom: 68px;
+}
+
+.subscribe-form__input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: inherit;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.subscribe-form__input::placeholder {
+    color: #656689;
+    font-family: Poppins;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.16;
+}
+
+.subscribe-form__submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    margin-right: -1px;
+    border-radius: 50%;
+    background-color: #ff5b2e;
+    box-shadow: 0px 15px 28px -7px rgba(255, 91, 46, 0.3);
+    flex-shrink: 0;
+    outline: none;
+    border: none;
+}
+
+.subscribe-form__submit:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.footer__heading {
+    color: #000958;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.11;
+}
+
+.social-list {
+    display: flex;
+    column-gap: 16px;
+    margin-top: 16px;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.social-item:hover {
+    opacity: 0.8;
+}
+
+.footer__row {
+    margin-left: 129px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 58px;
+}
+
+.footer__list {
+    margin-top: 14px;
+}
+
+.footer__link {
+    color: #656689;
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__copyright {
+    margin: 52px 0 0 22px;
+    color: #656689;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.16;
+    opacity: 0.5;
 }
